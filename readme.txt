@@ -15,7 +15,11 @@ VERIFY A USER MOBILE/CELL PHONE NUMBER
 HOW IT WORKS?
 
 1.User enter the Mobile/Cell Phone number
+
+
 2.An SMS with 6 digits code is sent to the user
+
+
 3.User confirm the 6 digits by entering the number onto the online form
 4.User mobile phone is confirmed
 
