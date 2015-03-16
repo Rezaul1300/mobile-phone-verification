@@ -38,6 +38,7 @@ Unzip the folder and place plugin files in /wp-content/plugins/
 3. Provide Mobile Number with Country which has to be verified
 4. Enter Verification Code sent to your mobile number to get verified
 5. Get the Verification Code Again if you didn't the code by clicking on Resend Button and Go To Step 4 
+6. Response Page
 
 == Short Codes ==
 
