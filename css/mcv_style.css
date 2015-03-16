@@ -18,7 +18,7 @@ ol li{padding:4px;}
 /* Frontend IVS Form - Start 03/03/2015 */
 
 .ivs-form1{margin-bottom:50px;float:left;width:75%;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;padding:20px;background:#ededed;}
-.ivs-inner-form{width:58%;float:left;}
+.ivs-inner-form{width:58% !important;float:left;}
 .ivs-field {margin: 5px 0px;}
 .ivs-field label{width:29%;float: left;margin-top: 14px;}
 .ivs-field input{width:70%!important;float: right;}
