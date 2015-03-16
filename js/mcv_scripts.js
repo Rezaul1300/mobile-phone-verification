@@ -15,7 +15,7 @@ jQuery(document).ready(function(){
 		jQuery.ajax({
 			url:site_url+'/wp-admin/admin-ajax.php?action=mcv_country_code',
 			type:'post',
-			data:'country='+$(this).val(),
+			data:'country='+jQuery(this).val(),
 			success:function(result){
 					jQuery(".loader_image").css("display","none");
 					jQuery("body").css("opacity",'1');
@@ -43,7 +43,7 @@ jQuery(document).ready(function(){
 			return false;
 
 		}
-		if(!regex_number.test($("#mobile_number").val())){
+		if(!regex_number.test(jQuery("#mobile_number").val())){
 			
 			jQuery("#mobile_number").css("border","1px solid red");
 			jQuery("#mobile_number").focus();
