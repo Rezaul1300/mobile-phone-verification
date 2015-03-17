@@ -3,6 +3,7 @@
 	* Plugin Name: Mobile Phone Verification
 	* Description: This is the first level qualification to address random registrations and provide your users a two factor authentication,You can position this API anywhere on your website or inside a form and customise the look and feel to suit the style of your website
 	* Author: Identity Verification Services
+	* Author URI: https://profiles.wordpress.org/identity-verification-services
 	* Version: 1.0
 	*/
 
