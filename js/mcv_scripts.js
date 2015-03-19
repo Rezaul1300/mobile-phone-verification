@@ -92,12 +92,20 @@ jQuery(document).ready(function(){
 			jQuery("#sms_code").css("border","1px solid red");
 			jQuery("#err_sms_code").css("color","red");
 			jQuery("#sms_code").focus();
-			jQuery("#err_sms_code").text("Please Enter SMS Code");
+			jQuery(".err_sms_code").text("Please Enter SMS Code");
 			return false;
-		}else{
+		}
+		else if(!regex_number.test(jQuery("#sms_code").val())){
+			jQuery("#sms_code").css("border","1px solid red");
+			jQuery("#err_sms_code").css("color","red");
+			jQuery("#sms_code").focus();
+			jQuery(".err_sms_code").text("Please Enter Valid SMS Code");
+			return false;
+		}
+		else{
 			jQuery("#sms_code").css("border","1px solid #dfdfdf");
 			
-			jQuery("#err_sms_code").text("");
+			jQuery(".err_sms_code").text("");
 
 		}
 		jQuery(".loader_image").css("display","block");

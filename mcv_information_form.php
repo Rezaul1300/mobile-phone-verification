@@ -145,7 +145,7 @@ if(count($api_credentials)>0){
 				<input type="hidden" id="mobile_number_result">
 					<input type="hidden" id="country_result">
 					<input type="text" id="sms_code" maxlength="6">
-					<span class="err_sms_code"></span>
+					<span class="err_sms_code err"></span>
 			</div>		
 			<div class="clear"></div>
 		</div>
