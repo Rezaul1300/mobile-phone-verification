@@ -87,7 +87,7 @@ jQuery(document).ready(function(){
 
 	});
 	jQuery("#verify_mcv_code").click(function(){
-		var regex_number=/^[0-9]{9}$/;
+		var regex_number=/^[0-9]+$/	;
 		if(jQuery("#sms_code").val()==''){
 			jQuery("#sms_code").css("border","1px solid red");
 			jQuery("#err_sms_code").css("color","red");
