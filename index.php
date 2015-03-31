@@ -117,11 +117,11 @@
 
 
 	function mcv_country_code(){
-		echo $country_code=file_get_contents("https://api.identityverification.com/get_verified/get_country_code?country=".$_POST['country']);
+		$country_code=mcv_sendPostData_api("https://api.identityverification.com/get_verified/get_country_code",json_encode(array("country"=>$_POST['country'])));
+		
+		echo json_encode($country_code);
 		exit;
-		//echo "<pre>";print_r(json_decode($country_code));
 	}
-
 
 	
 	// Style Sheets

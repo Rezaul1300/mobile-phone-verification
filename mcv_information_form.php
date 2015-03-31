@@ -1,7 +1,8 @@
 	<img src="<?php echo plugins_url('/images/loader.gif' , __FILE__)?>" style="display:none" class="loader_image">
 
 	<?php
-	if(count($api_credentials)>0){
+
+	if(count($api_credentials)>0 && in_array  ('curl', get_loaded_extensions())){
 	?>
 	<div class="main-form-plg mobls">
 		<div class="ivs-form1">
