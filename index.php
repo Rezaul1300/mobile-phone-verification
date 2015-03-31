@@ -139,7 +139,11 @@
 	add_action('wp_enqueue_scripts', 'mcv_scripts');
 	function mcv_scripts() { 
 		wp_enqueue_script('jquery');
-
+		?>
+<script>
+	var site_url='<?php echo site_url()?>'
+</script/>
+	<?php
 		wp_register_script('mcv_script', plugins_url('js/mcv_scripts.js', __FILE__));
 
 		wp_enqueue_script('mcv_script');
