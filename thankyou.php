@@ -30,7 +30,7 @@ $response=$mobile_code_authentication_response;
 					<div>
 						<form action="<?php echo ($response->is_mobile_number_verified=='true'?$redirect_url:$error_url)?>" method="post"  style ="text-align:center">
 							<input type="hidden" value='<?php echo json_encode($response)?>' name="response">
-							<button type="submit">Continue</button>
+							<button type="submit">CONTINUE</button>
 						</form>	
 					</div>
 				</div>
