@@ -21,36 +21,22 @@ $response=$mobile_code_authentication_response;
 			<?php
 			}if($response->status=='valid'){
 			?>
-			<table class="response-tbl">
-					<!-- <tr>
-						<th> Parameter</th>
-						<th> Value</th>
-						<th> Status</th>
-					</tr> -->
-					<tr>
-						<td colspan="3" style="text-align:center"><b>Your Mobile Number Verification details</b></td>
-					</tr>
-					<tr>
+			<div class="main-form-plg mobls">
+				<div class="ivs-form response-tbl-ivs">
+					<h5 style="text-align:center;">Your Mobile Number Verification details</h5>
+					<div><span>Mobile Number:</span><span><?php echo ucwords(str_replace("_"," ",$response->mobile_number))?></span>	</div>
+					<div><span>Status:</span><span><?php echo ($response->is_mobile_number_verified=='true'?'<img src="'.plugins_url("images/icons/tick_105.png" , __FILE__).'">':'<img src="'.plugins_url("images/icons/close-icon.gif" , __FILE__).'" style="width:19px;height:19px">')?></span>	</div>
+				
+					<div>
+						<form action="<?php echo ($response->is_mobile_number_verified=='true'?$redirect_url:$error_url)?>" method="post"  style ="text-align:center">
+							<input type="hidden" value='<?php echo json_encode($response)?>' name="response">
+							<button type="submit">Continue</button>
+						</form>	
+					</div>
+				</div>
+			</div>
 
-						<td>Mobile Number</td>
-						<td><?php echo ucwords(str_replace("_"," ",$response->mobile_number))?></td>
-						
-					</tr>
-					<tr>
-						<td>
-						Status
-						</td>
-						<td><?php echo ($response->is_mobile_number_verified=='true'?'<img src="'.plugins_url("images/icons/tick_105.png" , __FILE__).'">':'<img src="'.plugins_url("images/icons/close-icon.gif" , __FILE__).'" style="width:19px;height:19px">')?></td>
-					</tr>
-				</table>
-				<div>
-					<form action="<?php echo ($response->is_mobile_number_verified=='true'?$redirect_url:$error_url)?>" method="post"  style ="text-align:center">
-						<input type="hidden" value='<?php echo json_encode($response)?>' name="response">
-						<input type="submit" value="Continue" style="text-align:center;background:rgb(78,159,216) !important;color:#fff !important;">
-						<br>
-						<br>
-					</form>
-				</div>			
+			
 			<?php
 			}
 			?>
