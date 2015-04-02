@@ -5,11 +5,11 @@
 	if(count($api_credentials)>0 && in_array  ('curl', get_loaded_extensions())){
 	?>
 	<div class="main-form-plg mobls">
-		<div class="ivs-form1">
-		<h5>Mobile verification</h5>
+		<div class="ivs-form">
+		<h5>Mobile Verification</h5>
 		<div class="ivs-message alert-static"></div>
 			<form action="" method="post">
-			<div class="ivs-inner-form">
+			<div class="ivs-inner">
 			<div class="ivs-field">
 				<label for="country">Country</label>
 				<div class="ivs-input">
@@ -140,9 +140,9 @@
 			</div>
 			</form>
 		<div class="clear"></div>
-		<div class="result_mcv ivs-form" style="display:none;width:100%">
+		<div class="result_mcv " style="display:none;width:100%">
 		<form >
-		<div class="ivs-inner-form">
+		<div class="ivs-inner">
 			<div class="ivs-field">
 				<label for="driving_license">SMS Code	</label>
 				<div class="ivs-input">	
@@ -154,16 +154,18 @@
 				<div class="clear"></div>
 			</div>
 			<div class="ivs-field ivs-btn">	
-					<button type="button"  class="" href="#" id="verify_mcv_code" >Submit</button>
+					<button type="button"  class="" href="#" id="verify_mcv_code" >SUBMIT</button>
 				<div class="clear"></div>
 			</div>	
 			</div>
 		</form>
 		<div class="clear"></div>
-		<div class="resend-block">
-			
-			Still waiting for your SMS Code? Click <button type="button" class="resend_sms">CLICK HERE</button> to Resend<br/><br/>
-			Time to receive your code varies from carriers and countries and may take up to 30sec.
+		<div class="text-center">
+			<div class="resend-block">
+				
+				Still waiting for your SMS Code? <button type="button" class="resend_sms">CLICK HERE</button> to Resend<br/><br/>
+				Time to receive your code varies from carriers and countries and may take up to 30sec.
+			</div>
 		</div>
 	</div>
 	<div class="clear"></div>

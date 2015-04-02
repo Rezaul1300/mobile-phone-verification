@@ -147,7 +147,7 @@ jQuery(document).ready(function(){
 				jQuery(".ivs-message").slideDown("slow");
 				var d = JSON.parse(result_mcv);
 				if(d.status=='valid'){
-					jQuery(".ivs-message").text("Successfully Verification Code Sent to Your Mobile Number");	
+					jQuery(".ivs-message").text("Verification Code has been re-sent to your Mobile Number");	
 					jQuery(".result_mcv").slideDown("slow");
 				}else{
 					jQuery(".ivs-message").text("Failed to Send Verification Code");

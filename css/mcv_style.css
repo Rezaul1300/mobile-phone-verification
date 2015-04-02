@@ -1,6 +1,6 @@
 .loader_image{position: ABSOLUTE;margin-top: -5%;margin-left: 15%}
-.resend_sms{background: #4b85b2 !important;padding:3px;color:#fff;}
-.btn,#verify_mcv,#verify_mcv_code{background:#4b85b2 !important;color:#fff;border:1px solid;width:150px;cursor:pointer;float:right;border-radius: 5px;padding:10px;font-size: 16px;}
+.resend_sms{}
+.btn,#verify_mcv,#verify_mcv_code{width:150px;cursor:pointer;float:right;border-radius: 5px;padding:10px;font-size: 16px;}
 .ivs-btn{float:right;}
 #verify_mcv,#verify_mcv_code{width:75px !important;padding:6px;font-size: 14px;border-radius: 5px;text-align: center;font-weight:bold;}
 .ivs-btn a{text-align: center}
@@ -113,3 +113,67 @@ body .ivs-bc .setting table.form-table td{width: 100%!important;}
 body .ivs-bc .setting table.form-table tr td.td-btn{text-align: center;}
 }
 /* Backend IVS Form - End */
+
+.main-form-plg.mobls *{
+-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;
+
+}
+.main-form-plg.mobls .ivs-form{
+
+	background: #ededed;
+	max-width: 600px;
+	width: 100%;
+	margin-bottom: 120px;
+	padding: 15px;
+
+}
+
+.main-form-plg.mobls .ivs-field .ivs-input select{
+height: none;
+}	
+.main-form-plg.mobls .ivs-field .ivs-input{
+margin: 0px;
+}
+
+.main-form-plg.mobls .ivs-form .ivs-field label{
+margin-top: 0px;
+}	
+.main-form-plg.mobls .ivs-form input{
+
+
+	
+	margin-bottom:0px;
+	
+	width: 100%!important;
+
+}	
+
+
+.main-form-plg.mobls .resend-block button{
+	padding: 6px 12px;
+}
+.main-form-plg.mobls .resend-block{
+
+	float: none;
+	margin-top: 25px;
+
+}
+
+.main-form-plg.mobls button#verify_mcv,.main-form-plg.mobls button#verify_mcv_code , .main-form-plg.mobls button.resend_sms{
+
+	font-size:100%;
+	width: auto!important;
+	min-width: 11	0px;
+	float: none;
+	margin: 15px 0px 0px 0px;
+	padding: 6px 25px;
+	font-weight: normal;
+	
+	
+}
+.text-right{text-align: right;}
+.text-center{text-align: center;}
+.clear{clear: both;}
+
+
+
